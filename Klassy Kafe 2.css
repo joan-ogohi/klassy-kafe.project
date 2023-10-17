@@ -1,0 +1,311 @@
+::before ::after {
+box-sizing: border-box;
+
+}
+
+.body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.navbar{
+   position:sticky;
+   top:0;
+   left:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:20px;
+    border-style: outset;
+    border-width: 5px;
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+.nav-links li:hover{
+    color: tomato;
+}
+.active{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-page{
+    margin-bottom:100px;
+    color: whitesmoke;
+    padding-bottom: 20px;
+
+}
+
+/* Mobile Devices*/
+@media only screen and (max-width:850px){
+    .navbar{
+        padding:0
+    }
+
+    .logo{
+        position:fixed;
+        top:30px;
+        bottom:30px;
+
+    }
+
+    .nav-links{
+        position: fixed;
+        flex-direction: column;
+        width:100%;
+        height:100vh;
+        justify-content: center;
+        background-color: tomato;
+    }
+    .nav-links li{
+        margin: 30px auto;
+
+    }
+}
+
+.carousel-slide{
+    transition: 0.2ms;
+}
+.topbg{
+    width: 140%;
+    height: 100%;
+}
+
+/*container fluid*/
+.container-fluid h6{
+    color: tomato;
+}
+
+.container-fluid h2{
+    font-weight:900;
+    width: 70%;
+}
+
+.container-fluid article{
+font-family: 'poppins';
+font-weight:500 ;
+font-size:large;
+width: 100%;
+}
+
+.about-section{
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+/*menu*/
+
+.heading{
+    font-family: 'poppins';
+    margin-bottom: 10px;
+    padding:20px 0;
+    grid-column: 1/-1;
+    text-align: left;
+
+}
+
+.heading h4{
+    color:tomato;
+}
+
+
+.menu{
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 20px 40px;
+    margin-bottom: 100px;
+
+}
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+
+  .top-left {
+    position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: tomato;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+   
+.scroll-container{
+    display: grid;
+    position:relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px 15;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: 2s ease-in-out;
+    
+}
+
+.scroll-container h1{
+    background-color: tomato;
+    color: white;
+    width: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:tomato;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+ 
+
+  .scroll-container:hover .overlay {
+    bottom: 0;
+    height: 50%;
+}
+
+.scroll-container {
+  background-color: tomato;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /*chefs*/
+
+  .Chefs{
+margin-bottom: 150px;
+  }
+  .about-chefs{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-inline: 0;
+}
+
+.about-chefs h6{
+    color: tomato;
+}
+  
+.about-chefs h2{
+    font-weight:bold ;
+}
+
+.card{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.5;
+  }
+  
+  .fa-facebook {
+    background: tomato;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: tomato;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: tomato;
+    color: white;}
+
+    /*reservation-page*/
+    .reservation-page{
+        background-image: url(reservation-bg.jpg);
+        color: white;
+        width: 1500px;
+        height: 100vh;
+        background-size: 100%, 100vh;
+        position: relative;
+    }
+    
+
+.reservation-page h1{
+    font-weight: bold;
+}
+.Reservation-container-fluid{
+   margin-bottom: 100px;
+
+}
+
+
+.background-image{
+    width: 100%;
+    size: 100%;
+}
+
+.fa-phone:hover{
+    color: tomato;
+}
+
+.fa-envelope:hover{
+    color: tomato;
+}
+
+  /*last page*/
+  .lastpage{
+    background-color: tomato;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+  }
+ 
